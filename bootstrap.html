@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bootstrap</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<style>
+		#tt
+		{
+			background-color: red;
+			width: 50px;
+			height: 50px;
+			transition-duration: 2s;
+		}
+		#ll
+		{
+			background-color: red;
+			width: 170px;
+			height: 50px;
+			transition-duration: 2s;
+		}
+		#rr
+		{
+			background-color: red;
+			width: 50px;
+			height: 50px;
+			transition-duration: 2s;
+		}
+		#bb
+		{
+			background-color: red;
+			width: 50px;
+			height: 50px;
+			transition-duration: 2s;
+		}
+		#qw
+		{
+			padding-top: 250px;
+			transition-duration: 2s;
+		}
+		#ds
+		{
+			padding-right: 0px;
+			transition-duration: 2s;
+		}
+	</style>
+	<script>
+		function wid()
+		{
+			document.getElementById("rr").style.width="200px";
+			document.getElementById("ll").style.width="700px";
+			document.getElementById("ds").style.paddingRight="600px";
+			document.getElementById("tt").style.height="270px";
+			document.getElementById("qw").style.paddingTop="40px";
+			document.getElementById("bb").style.height="270px";
+		}
+	</script>
+</head>
+<body>
+	<div class="row" id="qw">
+		<div class="col"></div>
+		<div class="col-md-1">
+			<div id="tt" onclick="wid()"></div>
+		</div>
+		<div class="col"></div>
+	</div>
+	
+	<div class="row" id="ds">
+		<div class="col-md-5"></div>
+		<div class="col-md-1">
+			<div id="ll" onclick="wid()"></div>
+        </div>
+		<div class="col-md-1">
+			<div id="rr" onclick="wid()"></div>
+		</div>
+		<div class="col-md-5"></div>
+	</div>
+
+	<div class="row">
+		<div class="col"></div>
+		<div class="col-md-1">
+			<div id="bb" onclick="wid()"></div>
+		</div>
+		<div class="col"></div>
+	</div>
+</body>
+</html>
